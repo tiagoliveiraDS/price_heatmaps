@@ -2,8 +2,8 @@
 
 import { useSearchParams } from "next/navigation";
 import Map from "../components/Map/Map";
-import { useEffect, useState } from "react";
 import useSWR from "swr";
+import { Property } from "../models/Property";
 
 const getData = async (url: string) => {
     const res = await fetch(url);
@@ -20,11 +20,15 @@ export default function SearchPage() {
     const searchQuery = search ? search.get("q") : null;
     const encodedQuery = encodeURI(searchQuery || "")
 
-    const {data, isLoading} = useSWR(`api/search?q=${encodedQuery}`, getData);
+    const {data, isLoading} = useSWR<Property[]>(`api/search?q=${encodedQuery}`, getData);
+
+    if (!data) {
+        return <div>Failed to load data</div>;
+    }
 
     return (
-        <div>
-            Ola
+        <div className="Map">
+            <Map params={{properties: data}} />
         </div>
     );
 }
