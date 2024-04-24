@@ -27,4 +27,4 @@ const PropertySchema = new Schema(
     }
 );
 
-export default mongoose.models.Property || mongoose.model("Property", PropertySchema);
+export default mongoose.models.Property || mongoose.model("PropertySchema", PropertySchema);
