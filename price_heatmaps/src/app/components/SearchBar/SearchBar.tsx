@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import styles from "./SearchBar.module.css";
 
 export default function SearchBar() {
     const [searchQuery, setSearch] = useState("");
@@ -16,8 +17,10 @@ export default function SearchBar() {
     };
 
     return (
-        <form onSubmit={onSearch}>
+        <form className={styles.form} onSubmit={onSearch}>
             <input
+                className={styles.searchbar}
+                type="text"
                 value={searchQuery}
                 onChange={(event) => setSearch(event.target.value)}
                 placeholder="Onde?"

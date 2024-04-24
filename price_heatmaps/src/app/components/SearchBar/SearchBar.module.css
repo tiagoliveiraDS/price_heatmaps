@@ -1,0 +1,16 @@
+.search-bar{
+    display: flex;
+    border-radius: 50%;
+    padding: auto;
+    justify-content: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
