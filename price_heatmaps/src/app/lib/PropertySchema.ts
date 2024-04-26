@@ -20,11 +20,23 @@ const PropertySchema = new Schema(
         longitude: {
             type: Number,
             required: true,
-        }
+        },
+        district: {
+            type: String,
+            required: true,
+        },
+        county: {
+            type: String,
+            required: true,
+        },
+        parish: {
+            type: String,
+            required: true,
+        },
 
     }, {
         timestamps: true,
     }
 );
 
-export default mongoose.models.Property || mongoose.model("PropertySchema", PropertySchema);
+export default mongoose.models.Property || mongoose.model("Property", PropertySchema);
