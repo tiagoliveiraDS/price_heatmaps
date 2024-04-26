@@ -1,11 +1,11 @@
 import { Property } from '@/app/models/Property';
-import connect from '../../lib/db';
+import { connectDB } from '../../lib/db';
 import PropertySchema from '../../lib/PropertySchema';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
     try {
-        await connect();
+        await connectDB();
 
         const query = req.nextUrl.searchParams.get('q') || '' as string;
 
