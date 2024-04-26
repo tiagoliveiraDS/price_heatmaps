@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import styles from "./SearchBar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchBar() {
     const [searchQuery, setSearch] = useState("");
@@ -18,13 +20,17 @@ export default function SearchBar() {
 
     return (
         <form className={styles.form} onSubmit={onSearch}>
+            <button className={styles.button} onClick={onSearch}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
             <input
                 className={styles.searchbar}
-                type="text"
+                type="search"
                 value={searchQuery}
                 onChange={(event) => setSearch(event.target.value)}
-                placeholder="Onde?"
-            />
+                placeholder="Onde? (Distrito ou Concelho ou Freguesia)"
+            ></input>
+            
         </form>
     );
 }

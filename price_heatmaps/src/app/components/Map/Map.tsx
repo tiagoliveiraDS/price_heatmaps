@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic'
 
 import Heatmap from './Heatmap'
 import { Property } from '@/app/models/Property';
+import styles from './Map.module.css';
  
 const MapContainer = dynamic(() => import('react-leaflet').then((mod) => mod.MapContainer), {ssr: false})
 
@@ -21,7 +22,7 @@ export default function Map({params}: {params: {properties: Property[]}}) {
       <MapContainer
           center={[41.146667, -8.604596]}
           zoom={13}
-          style={{ height: "100vh", width: "100%" }}
+          className={styles.map}
       >
         <div><Heatmap params={{properties: params.properties}} /></div>
         
