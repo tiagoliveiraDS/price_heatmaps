@@ -1,12 +1,31 @@
 import mongoose from "mongoose";
 
-const connect = async () => {
+global.mongoose = {
+  connection: null,
+  promise: null
+};
+
+export async function connectDB() {
   try {
-    await mongoose.connect("mongodb+srv://admin:chVnoqDG7sKhmOjl@cluster0.y3fjmoe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {});
-    console.log("Connected to MongoDB");
+    if (global.mongoose && global.mongoose.connection) {
+      return global.mongoose.connection;
+    } else {
+      const connString = process.env.MONGO_URL;
+      if (!connString) {
+        console.log("No connection string provided");
+      }
+
+      const promise = await mongoose.connect(connString, {
+        autoIndex: true
+      });
+
+      global.mongoose = {
+        connection: await promise,
+        promise
+      };
+      console.log("Connected to MongoDB successfully");
+    }
   } catch (error) {
     throw new Error("Error connecting to MongoDB");
   }
 }
-
-export default connect;
