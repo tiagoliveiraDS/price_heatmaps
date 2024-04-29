@@ -1,0 +1,920 @@
+[
+    {
+        "id": 1,
+        "price": 320000,
+        "latitude": 38.759407043457,
+        "longitude": -9.1880407333374,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "São Vicente"
+    },
+    {
+        "id": 2,
+        "price": 640000,
+        "latitude": 38.767276763916,
+        "longitude": -9.16290664672852,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Lumiar"
+    },
+    {
+        "id": 3,
+        "price": 750000,
+        "latitude": 38.7382202148438,
+        "longitude": -9.14664936065674,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Avenidas Novas"
+    },
+    {
+        "id": 4,
+        "price": 160000,
+        "latitude": 38.75634765625,
+        "longitude": -9.24566555023193,
+        "district": "Lisboa",
+        "county": "Amadora",
+        "parish": "Venteira"
+    },
+    {
+        "id": 5,
+        "price": 1620000,
+        "latitude": 38.832389831543,
+        "longitude": -9.4658317565918,
+        "district": "Lisboa",
+        "county": "Sintra",
+        "parish": "Colares"
+    },
+    {
+        "id": 6,
+        "price": 159500,
+        "latitude": 38.7672271728516,
+        "longitude": -9.31099319458008,
+        "district": "Lisboa",
+        "county": "Sintra",
+        "parish": "Cacém e São Marcos"
+    },
+    {
+        "id": 7,
+        "price": 850000,
+        "latitude": 38.7889976501465,
+        "longitude": -9.20345211029053,
+        "district": "Lisboa",
+        "county": "Odivelas",
+        "parish": "Pontinha e Famões"
+    },
+    {
+        "id": 8,
+        "price": 239500,
+        "latitude": 38.8057518005371,
+        "longitude": -9.13682460784912,
+        "district": "Lisboa",
+        "county": "Loures",
+        "parish": "Camarate, Unhos e Apelação"
+    },
+    {
+        "id": 9,
+        "price": 29000,
+        "latitude": 39.075080871582,
+        "longitude": -9.04759216308594,
+        "district": "Lisboa",
+        "county": "Alenquer",
+        "parish": "Meca"
+    },
+    {
+        "id": 10,
+        "price": 134900,
+        "latitude": 39.0218925476074,
+        "longitude": -8.970534324646,
+        "district": "Lisboa",
+        "county": "Alenquer",
+        "parish": "Carregado e Cadafais"
+    },
+    {
+        "id": 11,
+        "price": 200000,
+        "latitude": 38.7190246582031,
+        "longitude": -9.1279296875,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "São Vicente"
+    },
+    {
+        "id": 12,
+        "price": 1050000,
+        "latitude": 38.7099914550781,
+        "longitude": -9.15804100036621,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Estrela"
+    },
+    {
+        "id": 13,
+        "price": 265000,
+        "latitude": 38.7831344604492,
+        "longitude": -9.16251945495605,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Santa Clara"
+    },
+    {
+        "id": 14,
+        "price": 290000,
+        "latitude": 38.7527847290039,
+        "longitude": -9.19740867614746,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Benfica"
+    },
+    {
+        "id": 15,
+        "price": 380000,
+        "latitude": 38.7283401489258,
+        "longitude": -9.16664409637451,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Campolide"
+    },
+    {
+        "id": 16,
+        "price": 262000,
+        "latitude": 38.7125396728516,
+        "longitude": -9.12638282775879,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Santa Maria Maior"
+    },
+    {
+        "id": 17,
+        "price": 270000,
+        "latitude": 38.7555770874023,
+        "longitude": -9.20509147644043,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Benfica"
+    },
+    {
+        "id": 18,
+        "price": 200000,
+        "latitude": 38.7981300354004,
+        "longitude": -9.19311714172363,
+        "district": "Lisboa",
+        "county": "Odivelas",
+        "parish": "Odivelas"
+    },
+    {
+        "id": 19,
+        "price": 290000,
+        "latitude": 38.7059097290039,
+        "longitude": -9.23233795166016,
+        "district": "Lisboa",
+        "county": "Oeiras",
+        "parish": "Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+    },
+    {
+        "id": 20,
+        "price": 170000,
+        "latitude": 38.7975425720215,
+        "longitude": -9.19559955596924,
+        "district": "Lisboa",
+        "county": "Odivelas",
+        "parish": "Odivelas"
+    },
+    {
+        "id": 21,
+        "price": 2000,
+        "latitude": 38.7101020812988,
+        "longitude": -9.16033840179443,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Estrela"
+    },
+    {
+        "id": 22,
+        "price": 590,
+        "latitude": 41.0371208190918,
+        "longitude": -8.58408832550049,
+        "district": "Porto",
+        "county": "Vila Nova de Gaia",
+        "parish": "Grijó e Sermonde"
+    },
+    {
+        "id": 23,
+        "price": 1250,
+        "latitude": 38.7699813842773,
+        "longitude": -9.09577369689941,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Parque das Nações"
+    },
+    {
+        "id": 24,
+        "price": 1400,
+        "latitude": 38.760555267334,
+        "longitude": -9.18632030487061,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Carnide"
+    },
+    {
+        "id": 25,
+        "price": 2000,
+        "latitude": 38.703784942627,
+        "longitude": -9.34260749816895,
+        "district": "Lisboa",
+        "county": "Cascais",
+        "parish": "São Domingos de Rana"
+    },
+    {
+        "id": 26,
+        "price": 700,
+        "latitude": 38.752758026123,
+        "longitude": -9.22998237609863,
+        "district": "Lisboa",
+        "county": "Amadora",
+        "parish": "Venteira"
+    },
+    {
+        "id": 27,
+        "price": 620,
+        "latitude": 39.0558700561523,
+        "longitude": -9.00697708129883,
+        "district": "Lisboa",
+        "county": "Alenquer",
+        "parish": "Alenquer (Santo Estêvão e Triana)"
+    },
+    {
+        "id": 28,
+        "price": 4500,
+        "latitude": 38.7090148925781,
+        "longitude": -9.16687774658203,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Estrela"
+    },
+    {
+        "id": 29,
+        "price": 550,
+        "latitude": 38.825252532959,
+        "longitude": -9.28276062011719,
+        "district": "Lisboa",
+        "county": "Sintra",
+        "parish": "Almargem do Bispo, Pêro Pinheiro e Montelavar"
+    },
+    {
+        "id": 30,
+        "price": 600,
+        "latitude": 38.7876637871671,
+        "longitude": -9.17882081326261,
+        "district": "Lisboa",
+        "county": "Odivelas",
+        "parish": "Odivelas"
+    },
+    {
+        "id": 31,
+        "price": 1200,
+        "latitude": 38.7868919372559,
+        "longitude": -9.18170166015625,
+        "district": "Lisboa",
+        "county": "Odivelas",
+        "parish": "Odivelas"
+    },
+    {
+        "id": 32,
+        "price": 2300,
+        "latitude": 38.7536888122559,
+        "longitude": -9.16678142547607,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Alvalade"
+    },
+    {
+        "id": 33,
+        "price": 600,
+        "latitude": 38.6437225341797,
+        "longitude": -9.03583240509033,
+        "district": "Setúbal",
+        "county": "Moita",
+        "parish": "Baixa da Banheira e Vale da Amoreira"
+    },
+    {
+        "id": 34,
+        "price": 1000,
+        "latitude": 40.6467704772949,
+        "longitude": -8.63298416137695,
+        "district": "Aveiro",
+        "county": "Aveiro",
+        "parish": "Esgueira"
+    },
+    {
+        "id": 35,
+        "price": 650,
+        "latitude": 32.6489334106445,
+        "longitude": -16.9170436859131,
+        "district": "Ilha da Madeira",
+        "county": "Funchal",
+        "parish": "São Pedro"
+    },
+    {
+        "id": 36,
+        "price": 1500,
+        "latitude": 38.7236175537109,
+        "longitude": -9.16443920135498,
+        "district": "Lisboa",
+        "county": "Lisboa",
+        "parish": "Alcântara"
+    },
+    {
+        "id": 37,
+        "price": 400,
+        "latitude": 41.2658500671387,
+        "longitude": -7.68629264831543,
+        "district": "Vila Real",
+        "county": "Vila Real",
+        "parish": "Andrães"
+    },
+    {
+        "id": 38,
+        "price": 830,
+        "latitude": 38.7153625,
+        "longitude": -9.2440863,
+        "district": "Lisboa",
+        "county": "Oeiras",
+        "parish": "Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+    },
+    {
+        "id": 39,
+        "price": 2450,
+        "latitude": 41.1217193603516,
+        "longitude": -8.66565608978271,
+        "district": "Porto",
+        "county": "Vila Nova de Gaia",
+        "parish": "Canidelo"
+    },
+    {
+        "id": 40,
+        "price": 1990,
+        "latitude": 41.1217193603516,
+        "longitude": -8.66565608978271,
+        "district": "Porto",
+        "county": "Vila Nova de Gaia",
+        "parish": "Canidelo"
+    },
+    {
+        "id": 41,
+        "price": 625000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 42,
+        "price": 895000,
+        "latitude": 41.1499786376953,
+        "longitude": -8.64905643463135,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 43,
+        "price": 750000,
+        "latitude": 41.1432609558105,
+        "longitude": -8.60927391052246,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    {
+        "id": 44,
+        "price": 327000,
+        "latitude": 41.1624031066895,
+        "longitude": -8.6305513381958,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    {
+        "id": 45,
+        "price": 166000,
+        "latitude": 41.1624450683594,
+        "longitude": -8.56982040405273,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Campanhã"
+    },
+    {
+        "id": 46,
+        "price": 1250000,
+        "latitude": 41.1534767150879,
+        "longitude": -8.60474872589111,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Bonfim"
+    },
+    {
+        "id": 47,
+        "price": 255000,
+        "latitude": 41.1615562438965,
+        "longitude": -8.63211345672607,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    {
+        "id": 48,
+        "price": 250000,
+        "latitude": 41.1760406,
+        "longitude": -8.5866833,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 49,
+        "price": 135000,
+        "latitude": 41.1586532592773,
+        "longitude": -8.61991786956787,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    {
+        "id": 50,
+        "price": 489000,
+        "latitude": 41.1603851318359,
+        "longitude": -8.63781833648682,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 51,
+        "price": 439000,
+        "latitude": 41.1688194274902,
+        "longitude": -8.59079933166504,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 52,
+        "price": 1490000,
+        "latitude": 41.1694221496582,
+        "longitude": -8.61862945556641,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 53,
+        "price": 182500,
+        "latitude": 41.1605072021484,
+        "longitude": -8.57811832427979,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Campanhã"
+    },
+    {
+        "id": 54,
+        "price": 117000,
+        "latitude": 41.1605072,
+        "longitude": -8.5781183,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Campanhã"
+    },
+    {
+        "id": 55,
+        "price": 240000,
+        "latitude": 41.1642151,
+        "longitude": -8.6035786,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 56,
+        "price": 350000,
+        "latitude": 41.1518669128418,
+        "longitude": -8.61774158477783,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória"
+    },
+    {
+        "id": 57,
+        "price": 550000,
+        "latitude": 41.1750717163086,
+        "longitude": -8.62699222564697,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 58,
+        "price": 2500000,
+        "latitude": 41.1667442321777,
+        "longitude": -8.68500328063965,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Aldoar, Foz do Douro e Nevogilde"
+    },
+    {
+        "id": 59,
+        "price": 185000,
+        "latitude": 41.14579199675231,
+        "longitude": -8.600875776352375,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Bonfim"
+    },
+    {
+        "id": 60,
+        "price": 700000,
+        "latitude": 41.1733971,
+        "longitude": -8.5806551,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Campanhã"
+    },
+    {
+        "id": 61,
+        "price": 500000,
+        "latitude": 41.1648941040039,
+        "longitude": -8.5944938659668,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 62,
+        "price": 500000,
+        "latitude": 41.1648941040039,
+        "longitude": -8.5944938659668,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Paranhos"
+    },
+    {
+        "id": 63,
+        "price": 199000,
+        "latitude": 41.3409538269043,
+        "longitude": -7.72452926635742,
+        "district": "Vila Real",
+        "county": "Vila Real",
+        "parish": "Adoufe e Vilarinho de Samardã"
+    },
+    {
+        "id": 64,
+        "price": 79500,
+        "latitude": 41.1084594726563,
+        "longitude": -8.22044849395752,
+        "district": "Porto",
+        "county": "Marco de Canaveses",
+        "parish": "Bem Viver"
+    },
+    {
+        "id": 65,
+        "price": 250000,
+        "latitude": 41.1214714050293,
+        "longitude": -8.60202121734619,
+        "district": "Porto",
+        "county": "Vila Nova de Gaia",
+        "parish": "Mafamude e Vilar do Paraíso"
+    },
+    {
+        "id": 66,
+        "price": 26800,
+        "latitude": 40.8381614685059,
+        "longitude": -7.94344711303711,
+        "district": "Viseu",
+        "county": "Castro Daire",
+        "parish": "Mamouros, Alva e Ribolhos"
+    },
+    {
+        "id": 67,
+        "price": 199000,
+        "latitude": 41.4487419128418,
+        "longitude": -8.27184581756592,
+        "district": "Braga",
+        "county": "Guimarães",
+        "parish": "Mesão Frio"
+    },
+    {
+        "id": 68,
+        "price": 228500,
+        "latitude": 41.2112731933594,
+        "longitude": -8.46168613433838,
+        "district": "Porto",
+        "county": "Valongo",
+        "parish": "Campo e Sobrado"
+    },
+    {
+        "id": 69,
+        "price": 390000,
+        "latitude": 41.1937370300293,
+        "longitude": -8.57805442810059,
+        "district": "Porto",
+        "county": "Gondomar",
+        "parish": "Rio Tinto"
+    },
+    {
+        "id": 70,
+        "price": 525000,
+        "latitude": 40.6684799194336,
+        "longitude": -8.60742282867432,
+        "district": "Aveiro",
+        "county": "Aveiro",
+        "parish": "Cacia"
+    },
+    {
+        "id": 71,
+        "price": 288000,
+        "latitude": 40.6354218,
+        "longitude": -8.6519966,
+        "district": "Aveiro",
+        "county": "Aveiro",
+        "parish": "Glória e Vera Cruz"
+    },
+    {
+        "id": 72,
+        "price": 625000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 73,
+        "price": 950000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 74,
+        "price": 560000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 75,
+        "price": 540000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 76,
+        "price": 565000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 77,
+        "price": 1040000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 78,
+        "price": 770000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 79,
+        "price": 565000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 80,
+        "price": 650000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 81,
+        "price": 585000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 82,
+        "price": 1115000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 83,
+        "price": 199000,
+        "latitude": 41.3409538269043,
+        "longitude": -7.72452926635742,
+        "district": "Vila Real",
+        "county": "Vila Real",
+        "parish": "Adoufe e Vilarinho de Samardã"
+    },
+    {
+        "id": 84,
+        "price": 79500,
+        "latitude": 41.1084594726563,
+        "longitude": -8.22044849395752,
+        "district": "Porto",
+        "county": "Marco de Canaveses",
+        "parish": "Bem Viver"
+    },
+    {
+        "id": 85,
+        "price": 250000,
+        "latitude": 41.1214714050293,
+        "longitude": -8.60202121734619,
+        "district": "Porto",
+        "county": "Vila Nova de Gaia",
+        "parish": "Mafamude e Vilar do Paraíso"
+    },
+    {
+        "id": 86,
+        "price": 26800,
+        "latitude": 40.8381614685059,
+        "longitude": -7.94344711303711,
+        "district": "Viseu",
+        "county": "Castro Daire",
+        "parish": "Mamouros, Alva e Ribolhos"
+    },
+    {
+        "id": 87,
+        "price": 199000,
+        "latitude": 41.4487419128418,
+        "longitude": -8.27184581756592,
+        "district": "Braga",
+        "county": "Guimarães",
+        "parish": "Mesão Frio"
+    },
+    {
+        "id": 88,
+        "price": 228500,
+        "latitude": 41.2112731933594,
+        "longitude": -8.46168613433838,
+        "district": "Porto",
+        "county": "Valongo",
+        "parish": "Campo e Sobrado"
+    },
+    {
+        "id": 89,
+        "price": 390000,
+        "latitude": 41.1937370300293,
+        "longitude": -8.57805442810059,
+        "district": "Porto",
+        "county": "Gondomar",
+        "parish": "Rio Tinto"
+    },
+    {
+        "id": 90,
+        "price": 525000,
+        "latitude": 40.6684799194336,
+        "longitude": -8.60742282867432,
+        "district": "Aveiro",
+        "county": "Aveiro",
+        "parish": "Cacia"
+    },
+    {
+        "id": 91,
+        "price": 288000,
+        "latitude": 40.6354218,
+        "longitude": -8.6519966,
+        "district": "Aveiro",
+        "county": "Aveiro",
+        "parish": "Glória e Vera Cruz"
+    },
+    {
+        "id": 92,
+        "price": 625000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 93,
+        "price": 950000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 94,
+        "price": 560000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 95,
+        "price": 540000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 96,
+        "price": 565000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 97,
+        "price": 1040000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 98,
+        "price": 770000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 99,
+        "price": 565000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 100,
+        "price": 650000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 101,
+        "price": 585000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    },
+    {
+        "id": 102,
+        "price": 1115000,
+        "latitude": 41.1598358154297,
+        "longitude": -8.65024280548096,
+        "district": "Porto",
+        "county": "Porto",
+        "parish": "Lordelo do Ouro e Massarelos"
+    }
+]
