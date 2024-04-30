@@ -18,6 +18,8 @@ export default function Heatmap( {params}: {params: {properties: Property[]}}) {
             intensityExtractor={(p) => p[2]}
             max = {max}
             radius={20}
+            fitBoundsOnLoad
+            fitBoundsOnUpdate
         />
     );
 }
