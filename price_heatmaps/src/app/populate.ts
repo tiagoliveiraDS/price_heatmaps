@@ -3,7 +3,6 @@ import fs from "fs";
 
 // Import the Mongoose model or schema definition
 import PropertySchema from "./lib/PropertySchema"; 
-import { connectDB } from "./lib/db";
 import { Property } from "./models/Property";
 
 
