@@ -1,0 +1,22 @@
+@startuml DomainModel
+
+skinparam linetype ortho
+
+rectangle #F4EDED{
+class Property << Root >> << Entity >>
+class Price << (v,#A4C2E5) ValueObject >>
+class Latitude << (v,#A4C2E5) ValueObject >>
+class Longitude << (v,#A4C2E5) ValueObject >>
+class Id << (v,orange) ValueObject >> << unique >>
+class District << (v,#A4C2E5) ValueObject >>
+class County << (v,#A4C2E5) ValueObject >>
+class Parish << (v,#A4C2E5) ValueObject >>
+}
+
+Property "1" --> "1" Price
+Property "1" --> "1" Latitude
+Property "1" --> "1" Longitude
+Property "1" --> "1" Id
+Property "1" --> "1" District
+Property "1" --> "1" County
+Property "1" --> "1" Parish
