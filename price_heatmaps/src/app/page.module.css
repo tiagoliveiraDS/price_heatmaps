@@ -13,5 +13,13 @@
   z-index: 1;
 }
 
+.searchBar {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 40vh;
+  z-index: 2;
+}
+
 
 
