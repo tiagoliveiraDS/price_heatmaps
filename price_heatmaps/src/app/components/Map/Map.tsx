@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 
 import dynamic from 'next/dynamic'
 
-import { Property } from '@/app/models/Property';
+import { Property } from '@/app/domain/Property';
 import styles from './Map.module.css';
 import { useMapEvents } from 'react-leaflet/hooks'
 import { Key, use, useEffect, useState } from 'react';
@@ -128,7 +128,8 @@ export default function DataMap({ properties }: { properties: Property[] }) {
 
   return (
     <>
-      {!duplicates || !propertiesWithoutDuplicatesCoords ? <div>No properties in this region</div> :
+      {!duplicates || !propertiesWithoutDuplicatesCoords ? <div>Loading...</div> :
+        duplicates.length === 0 && propertiesWithoutDuplicatesCoords.length === 0 ? <div>No properties in this region</div> :
         <>
           <MapContainer
             center={[centroid.mean_lat, centroid.mean_long]}
