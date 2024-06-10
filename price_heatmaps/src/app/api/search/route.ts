@@ -1,11 +1,10 @@
-import { connectDB } from '../../lib/db';
-import PropertySchema from '../../lib/PropertySchema';
+import { getConnectionDB } from '../persistence/db';
+import PropertySchema from '../persistence/PropertySchema';
 import { NextRequest, NextResponse } from 'next/server';
-import { populate } from '@/app/populate';
 
 export async function GET(req: NextRequest) {
     try {
-        await connectDB();
+        await getConnectionDB();
     
         const query = req.nextUrl.searchParams.get('q') || '' as string;
 

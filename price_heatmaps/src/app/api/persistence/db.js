@@ -5,7 +5,7 @@ global.mongoose = {
   promise: null
 };
 
-export async function connectDB() {
+export async function getConnectionDB() {
   try {
     if (global.mongoose && global.mongoose.connection) {
       return global.mongoose.connection;

@@ -2,9 +2,8 @@ import mongoose from "mongoose";
 import fs from "fs";
 
 // Import the Mongoose model or schema definition
-import PropertySchema from "./lib/PropertySchema"; 
-import { Property } from "./models/Property";
-
+import PropertySchema from "./PropertySchema";
+import { Property } from "../../domain/Property";
 
 
 
