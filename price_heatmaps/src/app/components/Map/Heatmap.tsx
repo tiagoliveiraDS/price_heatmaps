@@ -1,6 +1,6 @@
 'use client';
 
-import { Property } from '@/app/models/Property';
+import { Property } from '@/app/domain/Property';
 import { HeatmapLayerFactory } from '@vgrid/react-leaflet-heatmap-layer';
 import { useEffect, useState } from 'react';
 
