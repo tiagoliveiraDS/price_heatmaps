@@ -1,0 +1,14 @@
+@startuml PagesFlowSD
+
+actor User
+participant "Home Page" as Home
+participant "Search Page" as Search
+
+activate User
+User -> Home: Open
+activate Home
+Home -> Search: Search
+deactivate Home
+activate Search
+Search -> User: Back
+

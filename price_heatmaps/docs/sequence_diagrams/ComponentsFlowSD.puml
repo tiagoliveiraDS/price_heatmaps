@@ -1,0 +1,38 @@
+@startuml AppFlowSD
+actor User
+participant Home
+participant SearchBar
+participant SearchPage
+participant  "API Endpoint" as API
+participant DataMap
+participant Heatmap
+activate User
+
+User->Home: Open home page
+activate Home
+Home->SearchBar: Render search bar
+activate SearchBar
+User->SearchBar: Enter location
+SearchBar->Home: Update URL with location
+Home->SearchPage: Route to /search
+activate SearchPage
+SearchPage->SearchPage: Extract location from URL
+SearchPage->API: Fetch data for location
+activate  API
+API-->SearchPage: Return property data
+SearchPage->DataMap: Send data to DataMap
+activate DataMap
+DataMap->SearchPage: Load geographic map
+SearchPage-->User: Render map
+DataMap->Heatmap: Send data to Heatmap
+activate Heatmap
+Heatmap-->DataMap: Apply heatmap layer with data
+DataMap-->SearchPage: Load heatmap
+SearchPage-->User: Render heatmap
+deactivate Heatmap
+deactivate DataMap
+deactivate  API
+deactivate SearchPage
+deactivate SearchBar
+deactivate Home
+deactivate User

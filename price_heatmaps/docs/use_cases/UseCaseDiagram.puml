@@ -7,9 +7,11 @@ actor "User" as U
 
 
 package "Price Heatmaps"{
-    usecase "Search for Properties in certain a District, County or Parish" as UC1
-    usecase "See the results of the search translated to a Heatmap" as UC2
+    usecase "Efetuar a pesquisa por um Imóvel." as UC1
+    usecase "Visualizar os resultados da pesquisa no mapa com o layer de heatmap." as UC2
+    usecase "Atualizar as intensidades dos pontos, de acordo com a área do mapa que está a ser mostrada." as UC3
 }
 
 U --> UC1
 U --> UC2
+U --> UC3
