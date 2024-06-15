@@ -5,7 +5,7 @@ import IPropertyService from "./IProperpertyService";
 export default class PropertyService implements IPropertyService{
     async listPropertiesInLocation(searchQuery: string): Promise<Property[]> {
         try {
-            const response = await fetch(`api/search?q=${searchQuery}`); // Assuming you have an API route at /pages/api/data.js
+            const response = await fetch(`api/search?q=${searchQuery}`); 
             if (!response.ok) {
                 throw new Error('Failed to fetch data');
             }
