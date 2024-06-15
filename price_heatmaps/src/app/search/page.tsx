@@ -34,7 +34,7 @@ export default function SearchPage() {
                 <SearchBar />
             </div>
             {!fetchedData ? <Loading/> : 
-                <div className={styles.map}>
+                <div className={styles.map} data-testid="data-map">
                     <DataMap properties={fetchedData} />
                 </div>
             }
