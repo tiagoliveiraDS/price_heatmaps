@@ -6,10 +6,11 @@ import dynamic from 'next/dynamic'
 
 import { Property } from '@/app/domain/Property';
 import styles from './Map.module.css';
-import { useMapEvents } from 'react-leaflet/hooks'
+import { useMap, useMapEvents } from 'react-leaflet/hooks'
 import { Key, use, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Marker, Popup } from 'react-leaflet';
+import { Icon } from 'leaflet';
 
 const MapContainer = dynamic(() => import('react-leaflet').then((mod) => mod.MapContainer), { ssr: false })
 
@@ -28,7 +29,7 @@ interface Centroid {
   mean_long: number;
 }
 
-  // Média
+// Média
 export function removeDuplicatesAndGetCoords(properties: Property[]): { uniqueProperties: [number, number, number][], duplicatedCoords: DuplicateCoords[] } {
   const seen = new Map<string, { count: number, totalPrice: number }>();
   const uniqueProperties: [number, number, number][] = [];
@@ -50,7 +51,7 @@ export function removeDuplicatesAndGetCoords(properties: Property[]): { uniquePr
       const [latitude, longitude] = key.split(",").map(Number);
       const avgPrice = value.totalPrice / value.count;
       uniqueProperties.push([latitude, longitude, avgPrice]);
-      
+
       if (value.count > 1) {
         duplicatedCoords.push({ latitude, longitude, count: value.count });
       }
@@ -74,6 +75,13 @@ export default function DataMap({ properties }: { properties: Property[] }) {
   const [centroid, setCentroid] = useState<Centroid>({ mean_lat: 41.146665, mean_long: -8.604594 });
   const [duplicates, setDuplicates] = useState<DuplicateCoords[] | undefined>(undefined);
 
+  const housingIcon = new Icon({
+    iconUrl: 'https://img.icons8.com/?size=100&id=107459&format=png&color=000000',
+    iconSize: [38, 39], // size of the icon
+    iconAnchor: [22, 38], // point of the icon which will correspond to marker's location
+    popupAnchor: [-3, -37] // point from which the popup should open relative to the iconAnchor    
+  })
+
   // load the properties and calculate the duplicates and the centroid at the end of the component mount
   useEffect(() => {
     if (properties) {
@@ -81,10 +89,7 @@ export default function DataMap({ properties }: { properties: Property[] }) {
       setDuplicates(duplicatedCoords);
       setPropertiesWithoutDuplicatesCoords(uniqueProperties);
       const centroidRes = getCentroid(properties);
-      console.log(centroidRes);
       setCentroid(centroidRes);
-    } else {
-      noProperties();
     }
   }, [properties]);
 
@@ -92,40 +97,45 @@ export default function DataMap({ properties }: { properties: Property[] }) {
     setShowMarkers(!showMarkers);
   }
 
-  function noProperties() {
-    return (<div>No data</div>);
+  function ChangeCenter({ center }: { center: [number, number] }) {
+    const map = useMap();
+    useEffect(() => {
+      map.setView(center, 11);
+    }, [center]);
+    return null;
   }
+
 
   return (
     <>
       {!duplicates || !propertiesWithoutDuplicatesCoords ? <div>Loading...</div> :
         duplicates.length === 0 && propertiesWithoutDuplicatesCoords.length === 0 ? <div>No properties in this region</div> :
-        <>
-          <MapContainer
-            center={[centroid.mean_lat, centroid.mean_long]}
-            zoom={11}
-            className={styles.map}
-            minZoom={2}
-          >
-            <Heatmap
-              properties={propertiesWithoutDuplicatesCoords} data-testid="heatmap"/>
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            {showMarkers && duplicates.map((property: DuplicateCoords, index: number) => (
-              <Marker key={index} position={[property.latitude, property.longitude]}>
-                <Popup>
-                  <div>
-                    <p>There are {property.count} properties at this point</p>
-                  </div>
-                </Popup>
-              </Marker>
-            ))}
-          </MapContainer>
-          <button className={styles.button} onClick={toggleMarkers}>{showMarkers ? 'Hide' : 'Show'} Markers</button>
-          <Image src="/scale3.png" alt="Scale" width={400} height={50} className={styles.image} />
-        </>
+          <>
+            <MapContainer
+              zoom={11}
+              className={styles.map}
+              minZoom={2}
+            >
+              <ChangeCenter center={[centroid.mean_lat, centroid.mean_long]} />
+              <Heatmap
+                properties={propertiesWithoutDuplicatesCoords} data-testid="heatmap" />
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              {showMarkers && duplicates.map((property: DuplicateCoords, index: number) => (
+                <Marker key={index} position={[property.latitude, property.longitude]} icon={housingIcon}>
+                  <Popup>
+                    <div>
+                      <p>There are {property.count} properties at this point</p>
+                    </div>
+                  </Popup>
+                </Marker>
+              ))}
+            </MapContainer>
+            <button className={styles.button} onClick={toggleMarkers}>{showMarkers ? 'Hide' : 'Show'} Markers</button>
+            <Image src="/scale3.png" alt="Scale" width={400} height={50} className={styles.image} />
+          </>
       }
     </>
   );
