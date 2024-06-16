@@ -1,4 +1,3 @@
-// tests/integration.test.ts
 import { test, expect } from '@playwright/test';
 
 test('SearchPage + Service + Map integration performance test for Porto', async ({ page }) => {
