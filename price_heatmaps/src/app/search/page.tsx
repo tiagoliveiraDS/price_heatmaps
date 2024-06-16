@@ -2,14 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import DataMap from "../components/Map/Map";
-import useSWR from "swr";
-import { Property } from "../domain/Property";
 import styles from "./page.module.css";
 import SearchBar from "../components/SearchBar/SearchBar";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loading from "../loading";
 import { useDependencies } from "../../dependencies.context";
-import { set } from "mongoose";
 
 export default function SearchPage() {
     const { propertyService } = useDependencies()
@@ -26,7 +23,7 @@ export default function SearchPage() {
             .catch((error) => {
                 console.error('Error fetching data:', error);
             });
-    }, [searchQuery, propertyService]);
+    }, [search]);
 
     return (
         <div className={styles.main}>
